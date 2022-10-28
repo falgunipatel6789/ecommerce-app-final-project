@@ -33,13 +33,18 @@ public class UserController {
 		return mnv;
 
 	}
-	@RequestMapping(value ="/u", method = RequestMethod.POST)
+	@RequestMapping(value ="/update", method = RequestMethod.POST)
 	public ModelAndView updateregister(String username, String firstname, String lastname, String email) {
 		System.out.println("falguni");
 		System.out.println(username + firstname + lastname + email);
 		userservice.updregister(username, firstname, lastname,email);
 
 		ModelAndView mnv = new ModelAndView("masterUserPage");
+       List<User> users = userservice.getAllUsers();
+		
+		
+		mnv.addObject("allUsers", users);
+		
 		return mnv;
 
 	}

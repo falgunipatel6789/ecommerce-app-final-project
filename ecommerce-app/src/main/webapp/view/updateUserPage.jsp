@@ -18,7 +18,7 @@
 
 	<h3 style="margin-left: 400px; color: Blue">Check your Details for updation </h3>
 
-	<form action="u" method="post">
+	<form action="/update" method="post">
 		<div style="margin-left: 500px; margin-right: 500px"
 			class="form-group">
 			<div>
@@ -28,7 +28,7 @@
 			
 			<div>
 				<label for="exampleInputEmail1">First Name</label> <input
-					type="text" class="form-control" placeholder="Enter First Name" name="Name" value="${userData.getName() }">
+					type="text" class="form-control" placeholder="Enter First Name" name="firstname" value="${userData.getName() }">
 			</div>
 			<div>
 				<label for="exampleInputEmail1">Last Name</label> <input type="text"
@@ -40,7 +40,7 @@
 			</div>
 		</div><br>
 		<button style="margin-left: 600px" type="submit"
-			class="btn btn-primary">Update</button>
+			class="btn btn-primary">UPDATE</button>
 		<br>
 		<br>
 	</form>
