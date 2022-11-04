@@ -45,7 +45,7 @@
 
 <nav class="nav flex-column">
   <a class="nav-link" aria-current="page" href="masterUser">User</a>
-  <a class="nav-link" href="#">Product</a>
+  <a class="nav-link" href="productDetail">Product</a>
 </nav>
 <div style="margin-top: 350px; margin-left: 50px">
 

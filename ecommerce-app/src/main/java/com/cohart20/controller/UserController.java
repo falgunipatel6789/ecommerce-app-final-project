@@ -35,8 +35,8 @@ public class UserController {
 	}
 	@RequestMapping(value ="/update", method = RequestMethod.POST)
 	public ModelAndView updateregister(String username, String firstname, String lastname, String email) {
-		System.out.println("falguni");
-		System.out.println(username + firstname + lastname + email);
+//		System.out.println("falguni");
+//		System.out.println(username + firstname + lastname + email);
 		userservice.updregister(username, firstname, lastname,email);
 
 		ModelAndView mnv = new ModelAndView("masterUserPage");

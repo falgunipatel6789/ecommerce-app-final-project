@@ -2,11 +2,11 @@ package com.cohart20.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.cohart20.entity.User;
+
+import com.cohart20.entity.Product;
 
 @Repository
 
-public interface UserRepository extends JpaRepository<User,String>{
+public interface ProductRepository extends JpaRepository<Product,String>{
 
- 
 }
